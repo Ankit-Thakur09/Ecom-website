@@ -1,0 +1,168 @@
+{
+  "categories": [
+    {
+      "name": "fashion",
+      "categoryImage": "/thumbnails/fashion.webp",
+      "subcategories": [
+        {
+          "name": "Men",
+          "subcategoryImage": "/thumbnails/menFashion.webp",
+          "clothing": [
+            {
+              "name": "Formal Shirt",
+              "price": 25.99,
+              "description": "Slim fit cotton shirt perfect for office wear.",
+              "image": "/images/items/formal-shirt.jpg"
+            },
+            {
+              "name": "Casual T-Shirt",
+              "price": 15.49,
+              "description": "Soft cotton t-shirt with a stylish design.",
+              "image": "/images/items/casual-tshirt.jpg"
+            }
+          ],
+          "footwear": [
+            {
+              "name": "Running Shoes",
+              "price": 45.99,
+              "description": "Lightweight and comfortable running shoes.",
+              "image": "/images/items/running-shoes.jpg"
+            }
+          ]
+        },
+        {
+          "name": "women",
+          "subcategoryImage": "thumbnails/womenFashion.webp",
+          "clothing": [
+            {
+              "name": "Evening Dress",
+              "price": 60.0,
+              "description": "Elegant evening dress with lace details.",
+              "image": "/images/items/evening-dress.jpg"
+            }
+          ]
+        },
+        {
+          "name": "kids",
+          "subcategoryImage": "thumbnails/kidsFashion.webp",
+          "clothing": [
+            {
+              "name": "Cartoon Print T-Shirt",
+              "price": 12.99,
+              "description": "Colorful t-shirt with cartoon characters.",
+              "image": "/images/items/kids-tshirt.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "grocery",
+      "categoryImage": "/thumbnails/grocery1.webp",
+      "subcategories": [
+        {
+          "name": "fruits",
+          "subcategoryImage": "/images/subcategories/fruits.jpg",
+          "items": [
+            {
+              "name": "Apples",
+              "price": 3.99,
+              "description": "Fresh organic apples.",
+              "image": "/images/items/apples.jpg"
+            }
+          ]
+        },
+        {
+          "name": "vegetables",
+          "subcategoryImage": "/images/subcategories/vegetables.jpg",
+          "items": [
+            {
+              "name": "Carrots",
+              "price": 2.49,
+              "description": "Crunchy and fresh carrots.",
+              "image": "/images/items/carrots.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "electronics",
+      "categoryImage": "/thumbnails/electrionics.webp",
+      "subcategories": [
+        {
+          "name": "mobile",
+          "subcategoryImage": "/images/subcategories/mobile.jpg",
+          "items": [
+            {
+              "name": "Smartphone XYZ",
+              "price": 499.99,
+              "description": "Latest model with high-resolution camera.",
+              "image": "/images/items/smartphone.jpg"
+            }
+          ]
+        },
+        {
+          "name": "laptop",
+          "subcategoryImage": "/images/subcategories/laptop.jpg",
+          "items": [
+            {
+              "name": "Gaming Laptop Pro",
+              "price": 1299.99,
+              "description": "Powerful laptop with 16GB RAM and RTX graphics.",
+              "image": "/images/items/gaming-laptop.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "sports and gym",
+      "categoryImage": "/thumbnails/sports.webp",
+      "subcategories": [
+        {
+          "name": "fitness equipment",
+          "subcategoryImage": "/images/subcategories/fitness-equipment.jpg",
+          "items": [
+            {
+              "name": "Dumbbell Set",
+              "price": 50.0,
+              "description": "Adjustable weight dumbbells for home workouts.",
+              "image": "/images/items/dumbbells.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "home decor",
+      "categoryImage": "/thumbnails/homedec1.webp",
+      "subcategories": [
+        {
+          "name": "furniture",
+          "subcategoryImage": "/images/subcategories/furniture.jpg",
+          "items": [
+            {
+              "name": "Wooden Coffee Table",
+              "price": 199.99,
+              "description": "Modern wooden coffee table with storage.",
+              "image": "/images/items/coffee-table.jpg"
+            }
+          ]
+        },
+        {
+          "name": "lighting",
+          "subcategoryImage": "/images/subcategories/lighting.jpg",
+          "items": [
+            {
+              "name": "LED Table Lamp",
+              "price": 29.99,
+              "description": "Stylish LED lamp with adjustable brightness.",
+              "image": "/images/items/table-lamp.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
