@@ -3,6 +3,7 @@
     {
       "name": "fashion",
       "categoryImage": "/thumbnails/fashion.webp",
+      "path":"fashion",
       "subcategories": [
         {
           "name": "Men",
@@ -59,6 +60,7 @@
     {
       "name": "grocery",
       "categoryImage": "/thumbnails/grocery1.webp",
+      "path": "grocery",
       "subcategories": [
         {
           "name": "fruits",
@@ -88,6 +90,7 @@
     },
     {
       "name": "electronics",
+      "path": "electronics",
       "categoryImage": "/thumbnails/electrionics.webp",
       "subcategories": [
         {
@@ -119,6 +122,7 @@
     {
       "name": "sports and gym",
       "categoryImage": "/thumbnails/sports.webp",
+      "path": "sports_and_gym",
       "subcategories": [
         {
           "name": "fitness equipment",
@@ -137,6 +141,7 @@
     {
       "name": "home decor",
       "categoryImage": "/thumbnails/homedec1.webp",
+      "path": "homedecor",
       "subcategories": [
         {
           "name": "furniture",

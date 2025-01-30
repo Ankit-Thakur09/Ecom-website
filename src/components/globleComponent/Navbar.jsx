@@ -9,7 +9,8 @@ import {
   UserCircleIcon,
 } from "lucide-react";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import LoginPage from "./Login";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState();
@@ -17,6 +18,38 @@ const Navbar = () => {
     useState(false);
   const [isOpenFashion, setIsOpenFashion] = useState(false);
   const [openMenuType, setOpenMenuType] = useState(false);
+
+  const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
+  const modalRef = useRef(null);
+
+  const closeModal = () => setIsLoginModalOpen(false);
+  useEffect(() => {
+    if (isLoginModalOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isLoginModalOpen]);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        modalRef.current &&
+        !modalRef.current.contains(event.target) &&
+        isLoginModalOpen
+      ) {
+        closeModal();
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isLoginModalOpen]);
   useEffect(() => {
     if (isOpenFashion == true) {
       setIsOpenDropDownElectronics(false);
@@ -84,7 +117,7 @@ const Navbar = () => {
             <div>
               <ShoppingBasket />
             </div>
-            <div>
+            <div onClick={() => setIsLoginModalOpen(true)}>
               <UserCircleIcon />
             </div>
           </div>
@@ -239,6 +272,16 @@ const Navbar = () => {
             <p>{openMenuType} Item 1</p>
             <p>{openMenuType} Item 2</p>
             <p>{openMenuType} Item 3</p>
+          </div>
+        </div>
+      )}
+      {isLoginModalOpen && (
+        <div className="fixed inset-0 z-50 flex w-full h-screen justify-center  rounded-3xl py-[2vw] ">
+          <div
+            className="w-[80%] md:w-[40vw] overflow-y-auto h-[90%]  rounded-3xl"
+            ref={modalRef}
+          >
+            <LoginPage showImage={false} Xmark={true} closeModal={closeModal} />
           </div>
         </div>
       )}

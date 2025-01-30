@@ -7,11 +7,7 @@ const TextParallax = ({ img, heading, subHeading }) => {
     <div className="bg-white ">
       {/* Electronics Section */}
       {/* <CategorySection title="Electronics"> */}
-      <TxtPlxContent
-        img={img}
-        heading={heading}
-        subHeading={subHeading}
-      >
+      <TxtPlxContent img={img} heading={heading} subHeading={subHeading}>
         <Content description="Discover the latest smartphones, laptops, and accessories at unbeatable prices!" />
       </TxtPlxContent>
       {/* </CategorySection> */}
@@ -55,14 +51,16 @@ const CategorySection = ({ title, children }) => {
 const TxtPlxContent = ({ img, heading, subHeading, children }) => {
   return (
     <div
-      // style={{
-      //   paddingLeft: ImgPadding,
-      //   paddingRight: ImgPadding,
-      // }}
+      style={{
+        paddingLeft: ImgPadding,
+        paddingRight: ImgPadding,
+      }}
     >
-      <div className="relative h-[150vh]">
+      <div className="relative h-[150vh] rounded-3xl">
         <StickyImg img={img}></StickyImg>
         <Overlay heading={heading} subHeading={subHeading} />
+        <OverlayOne heading={heading} subHeading={subHeading} />
+        <OverlayTwo heading={heading} subHeading={subHeading} />
       </div>
       {children}
     </div>
@@ -90,7 +88,7 @@ const StickyImg = ({ img }) => {
         scale,
       }}
       ref={targetRef}
-      className="sticky z-0 overflow-hidden "
+      className="sticky z-0 overflow-hidden rounded-3xl"
     >
       <motion.div
         className="absolute inset-0 bg-neutral-950/70"
@@ -120,6 +118,30 @@ const Overlay = ({ heading, subHeading }) => {
   });
 
   const y = useTransform(scrollYProgress, [0, 1], [250, -250]);
+  const opacity = useTransform(scrollYProgress, [1, 0.5, 0.75], [0, 1, 0]);
+
+  return (
+    <motion.div
+      ref={targetRef}
+      style={{
+        y,
+        opacity,
+      }}
+      className="absolute left-0 top-0 flex flex-col items-center justify-start h-screen w-full text-white text-center"
+    >
+      <p className="mb-2 text-xl md:mb-4 md:text-3xl">{subHeading}</p>
+      <p className="text-4xl font-bold md:text-7xl">{heading}</p>
+    </motion.div>
+  );
+};
+const OverlayOne = ({ heading, subHeading }) => {
+  const targetRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: targetRef,
+    offset: ["start end", "end start"],
+  });
+
+  const y = useTransform(scrollYProgress, [0, 1], [250, -250]);
   const opacity = useTransform(scrollYProgress, [0.25, 0.5, 0.75], [0, 1, 0]);
 
   return (
@@ -130,6 +152,30 @@ const Overlay = ({ heading, subHeading }) => {
         opacity,
       }}
       className="absolute left-0 top-0 flex flex-col items-center justify-center h-screen w-full text-white text-center"
+    >
+      <p className="mb-2 text-xl md:mb-4 md:text-3xl">{subHeading}</p>
+      <p className="text-4xl font-bold md:text-7xl">{heading}</p>
+    </motion.div>
+  );
+};
+const OverlayTwo = ({ heading, subHeading }) => {
+  const targetRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: targetRef,
+    offset: ["start end", "end start"],
+  });
+
+  const y = useTransform(scrollYProgress, [0, 1], [250, -250]);
+  const opacity = useTransform(scrollYProgress, [0.25, 0.5, 1], [0, 1, 0]);
+
+  return (
+    <motion.div
+      ref={targetRef}
+      style={{
+        y,
+        opacity,
+      }}
+      className="absolute left-0 top-0 flex flex-col items-center justify-end h-screen w-full text-white text-center"
     >
       <p className="mb-2 text-xl md:mb-4 md:text-3xl">{subHeading}</p>
       <p className="text-4xl font-bold md:text-7xl">{heading}</p>

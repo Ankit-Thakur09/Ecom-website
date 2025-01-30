@@ -5,12 +5,9 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useSelector } from "react-redux";
 import Link from "next/link";
 
-const SectionSlide = ({data}) => {
-  
- console.log(data)
-
+const SectionSlide = ({ data, visit = false, heading }) => {
   const sliderRef = useRef(null);
-  const itemWidth = 240; 
+  const itemWidth = 240;
 
   const nextSlide = () => {
     if (sliderRef.current) {
@@ -27,8 +24,14 @@ const SectionSlide = ({data}) => {
   return (
     <div className="relative w-full px-4 md:px-10">
       <div className="flex justify-between items-end px-2 md:px-5">
-        <div className="text-2xl font-bold">Top Brands</div>
-        <div className="cursor-pointer font-semibold text-blue-500 hover:underline">
+        <div className="text-2xl font-bold">{heading}</div>
+        <div
+          className={`${
+            visit
+              ? " cursor-pointer font-semibold text-blue-500 hover:underline"
+              : "hidden"
+          }`}
+        >
           Visit Section
         </div>
       </div>
@@ -45,12 +48,11 @@ const SectionSlide = ({data}) => {
         >
           {data.map((item, index) => (
             <Link
-              href={`/${item.name}`}
+              href={`/${item.path}`}
               key={index}
               className="flex-none w-56 transform transition-transform cursor-pointer hover:scale-105"
             >
-              <div className="h-56 w-56 flex overflow-hidden justify-center items-center bg-gray-100 rounded-lg shadow-md">
-                
+              <div className="h-[200px] w-[200px] flex overflow-hidden justify-center items-center bg-gray-100 rounded-lg shadow-md">
                 <img
                   src={item.categoryImage}
                   alt={item.name}

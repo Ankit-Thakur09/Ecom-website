@@ -41,7 +41,12 @@ const HomePage = () => {
   // console.log(categoryNames);
   return (
     <>
-      <SectionSlide data={categories} />
+      <SectionSlide data={categories} heading="Find the best" />
+      <TextParallex
+        heading="Fresh Groceries"
+        subHeading="Everyday essentials at the best prices"
+        img="/parallex/grocery.webp"
+      />
     </>
   );
 };
