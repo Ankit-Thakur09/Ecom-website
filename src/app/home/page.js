@@ -6,6 +6,7 @@ import TopSection from "@/components/globleComponent/TopSection";
 import Card from "@/components/homeComponent/Card";
 import SectionSlide from "@/components/globleComponent/SectionSlide";
 import React from "react";
+import HeroSection from "@/components/globleComponent/HeroSection";
 
 const HomePage = () => {
   const [data, setData] = useState(null);
@@ -41,6 +42,7 @@ const HomePage = () => {
   // console.log(categoryNames);
   return (
     <>
+      <HeroSection/>
       <SectionSlide data={categories} heading="Find the best" />
       <TextParallex
         heading="Fresh Groceries"
