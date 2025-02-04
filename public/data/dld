@@ -1,0 +1,214 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "UV Protection Swim Set",
+      "price": 1999,
+      "description": "Two-piece swimsuit with UPF 50+ protection and fun sea creature prints.",
+      "image": "/images/items/kids-swim-set.jpg",
+      "brand": "SunSafe",
+      "season": "summer",
+      "material": "UV Protected Polyester Blend",
+      "ageRange": "2-12 years",
+      "rating": "4.8",
+      "type": "Swimwear",
+      "section": "Beachwear",
+      "review": [
+        {
+          "user": "BeachMom",
+          "date": "2024-11-10",
+          "text": "Great sun protection and dries quickly!"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Cotton Shorts Set",
+      "price": 1299,
+      "description": "Breathable cotton shorts with matching t-shirt in bright summer colors.",
+      "image": "/images/items/kids-shorts-set.jpg",
+      "brand": "KidsCool",
+      "season": "summer",
+      "material": "100% Cotton",
+      "ageRange": "3-14 years",
+      "rating": "4.7",
+      "type": "Casual",
+      "section": "Daily Wear",
+      "review": [
+        {
+          "user": "ComfortFirst",
+          "date": "2024-11-15",
+          "text": "Perfect for hot days, very comfortable!"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Sun Protection Hat",
+      "price": 799,
+      "description": "Wide-brim sun hat with neck coverage and adjustable chin strap.",
+      "image": "/images/items/kids-sun-hat.jpg",
+      "brand": "SunSafe",
+      "season": "summer",
+      "material": "UPF 50+ Cotton Blend",
+      "ageRange": "2-12 years",
+      "rating": "4.9",
+      "type": "Accessories",
+      "section": "Sun Protection",
+      "review": [
+        {
+          "user": "SafetyFirst",
+          "date": "2024-11-08",
+          "text": "Stays on well and great coverage!"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Dinosaur Print Sandals",
+      "price": 999,
+      "description": "Comfortable sandals with dinosaur prints and secure straps.",
+      "image": "/images/items/kids-sandals.jpg",
+      "brand": "KidsFun",
+      "season": "summer",
+      "material": "EVA with Anti-slip Sole",
+      "ageRange": "2-10 years",
+      "rating": "4.6",
+      "type": "Casual",
+      "section": "Footwear",
+      "review": [
+        {
+          "user": "ActiveMom",
+          "date": "2024-11-11",
+          "text": "Easy to clean and comfortable for active kids!"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Light Summer Dress",
+      "price": 1499,
+      "description": "Sleeveless cotton dress with butterfly prints and built-in shorts.",
+      "image": "/images/items/kids-summer-dress.jpg",
+      "brand": "KidsCool",
+      "season": "summer",
+      "material": "100% Cotton",
+      "ageRange": "3-12 years",
+      "rating": "4.8",
+      "type": "Casual",
+      "section": "Dresses",
+      "review": [
+        {
+          "user": "DressLover",
+          "date": "2024-11-13",
+          "text": "Perfect for summer parties and play!"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Quick-Dry Sports Set",
+      "price": 1599,
+      "description": "Moisture-wicking shorts and t-shirt set for active kids.",
+      "image": "/images/items/kids-sports-set.jpg",
+      "brand": "ActiveKids",
+      "season": "summer",
+      "material": "Quick-Dry Polyester",
+      "ageRange": "4-14 years",
+      "rating": "4.7",
+      "type": "Sportswear",
+      "section": "Active Wear",
+      "review": [
+        {
+          "user": "SportsDad",
+          "date": "2024-11-14",
+          "text": "Great for sports and summer activities!"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Beach Cover-Up",
+      "price": 899,
+      "description": "Light hooded cover-up with fun beach prints.",
+      "image": "/images/items/kids-cover-up.jpg",
+      "brand": "SunSafe",
+      "season": "summer",
+      "material": "Light Cotton Blend",
+      "ageRange": "2-12 years",
+      "rating": "4.6",
+      "type": "Beachwear",
+      "section": "Swimwear",
+      "review": [
+        {
+          "user": "PoolMom",
+          "date": "2024-11-16",
+          "text": "Perfect for pool days!"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Cargo Shorts",
+      "price": 1299,
+      "description": "Lightweight cargo shorts with adjustable waist and multiple pockets.",
+      "image": "/images/items/kids-cargo-shorts.jpg",
+      "brand": "KidsCool",
+      "season": "summer",
+      "material": "Cotton Blend",
+      "ageRange": "4-14 years",
+      "rating": "4.8",
+      "type": "Casual",
+      "section": "Bottoms",
+      "review": [
+        {
+          "user": "PracticalMom",
+          "date": "2024-11-12",
+          "text": "Durable and perfect for summer adventures!"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Summer Pajama Set",
+      "price": 999,
+      "description": "Cool cotton pajama set with short sleeves and shorts.",
+      "image": "/images/items/kids-summer-pjs.jpg",
+      "brand": "CozyKids",
+      "season": "summer",
+      "material": "100% Cotton",
+      "ageRange": "2-14 years",
+      "rating": "4.7",
+      "type": "Sleepwear",
+      "section": "Nightwear",
+      "review": [
+        {
+          "user": "NightMom",
+          "date": "2024-11-16",
+          "text": "Light and comfortable for summer nights!"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Summer School Uniform Set",
+      "price": 1799,
+      "description": "Light cotton uniform set with short sleeves and shorts/skirt.",
+      "image": "/images/items/kids-summer-uniform.jpg",
+      "brand": "SchoolStyle",
+      "season": "summer",
+      "material": "Cotton Blend",
+      "ageRange": "4-16 years",
+      "rating": "4.7",
+      "type": "Formal",
+      "section": "School Wear",
+      "review": [
+        {
+          "user": "SchoolMom",
+          "date": "2024-11-15",
+          "text": "Perfect weight for summer school days!"
+        }
+      ]
+    }
+  ]
+}

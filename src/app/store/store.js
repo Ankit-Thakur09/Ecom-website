@@ -1,10 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import storeDataReducer from "./reducer/StoreDataReducer"; // ✅ Import the reducer, not the slice
+import storeDataReducer from "./reducer/StoreDataReducer";
+import dataReducer from "./reducer/DataSlice";
 
 export const store = configureStore({
   reducer: {
     storeData: storeDataReducer,
+    data: dataReducer,
   },
 });
-
-export default store;

@@ -4,8 +4,10 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import Link from "next/link";
 
-const ImageSlider = ({data}) => {
+const ImageSlider = ({ data }) => {
+  console.log(data)
   // const data = [
   //   { img: "/super2.jpg", heading: "Winter Clothes" },
   //   { img: "/super3.webp", heading: "Nike Shoes" },
@@ -26,7 +28,7 @@ const ImageSlider = ({data}) => {
         <button className="px-7 py-3 mt-3 bg-black text-white rounded-full hover:bg-gray-900 duration-300">
           Explore
         </button>
-      </div> */}
+      </div> */}{" "}
       <div>
         {/* <h2 className="text-2xl font-bold text-left my-6">
           SuperHero Collection
@@ -51,19 +53,23 @@ const ImageSlider = ({data}) => {
           >
             {data.map((item, index) => (
               <SwiperSlide key={index}>
-                <div className="relative group rounded-lg overflow-hidden duration-500 shadow-md">
-                  {/* Image */}
-                  <img
-                    src={item.subcategoryImage}
-                    alt={item.heading}
-                    className="w-full h-screen object-cover rounded-lg scale-100 group-hover:scale-105 duration-500"
-                  />
-                  {/* Overlay */}
-                  <div className="absolute inset-0 bg-black/60 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 duration-300">
-                    <p className="text-2xl font-bold capitalize">{item.name}</p>
-                    <p className="text-sm mt-2">Explore this collection</p>
+                <Link href={`/fashion/${item.name}`}>
+                  <div className="relative group rounded-lg overflow-hidden duration-500 shadow-md">
+                    {/* Image */}
+                    <img
+                      src={item.subcategoryImage}
+                      alt={item.heading}
+                      className="w-full h-screen object-cover rounded-lg scale-100 group-hover:scale-105 duration-500"
+                    />
+                    {/* Overlay */}
+                    <div className="absolute inset-0 bg-black/60 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 duration-300">
+                      <p className="text-2xl font-bold capitalize">
+                        {item.name}
+                      </p>
+                      <p className="text-sm mt-2">Explore this collection</p>
+                    </div>
                   </div>
-                </div>
+                </Link>
               </SwiperSlide>
             ))}
           </Swiper>

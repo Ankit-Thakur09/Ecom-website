@@ -6,33 +6,20 @@ import ImageSlider from "@/components/globleComponent/ImageSlider";
 import { useSelector } from "react-redux";
 
 const Fashion = () => {
-  const [data, setData] = useState(null);
-  const [error, setError] = useState("");
-  // const [category, setCategory] = useState("");
+ 
+    const AllData = useSelector((state) => state.storeData.allData);
+    console.log(AllData);
+ 
+ 
+ 
+   if (!AllData || !AllData.categories) {
+     return <p>Loading...</p>;
+   }
+ 
+   const categories = AllData.categories;
+ console.log(categories);
+ 
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch("/data/itemsData.json"); // Fetch from public folder
-        if (!response.ok) throw new Error("Failed to load data");
-
-        const jsonData = await response.json();
-        setData(jsonData);
-      } catch (err) {
-        setError(err.message);
-      }
-    };
-
-    fetchData();
-  }, []);
-
-  // // console.log(data );
-
-  if (!data || !data.categories) {
-    return <p>Loading...</p>;
-  }
-
-  const categories = data.categories;
 const fashionCategory = categories.find(
   (category) => category.name === "fashion"
 );
@@ -41,7 +28,7 @@ if (!fashionCategory) {
   return <p>Fashion category not found</p>;
 }
 
-  console.log(fashionCategory.subcategories);
+  // console.log(fashionCategory.subcategories);
   const subcategories = fashionCategory.subcategories;
 
   return (

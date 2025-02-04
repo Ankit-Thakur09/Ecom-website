@@ -3,8 +3,10 @@ import { createSlice } from "@reduxjs/toolkit";
 export const storeDataSlice = createSlice({
   name: "storeData",
   initialState: {
-    category: "",
-    allData: [], 
+    allData: {}, // Stores full data
+    categories: [], // Stores category objects
+    subcategories: [], // Stores subcategory objects
+    items: [], // Stores individual items
   },
   reducers: {
     allStoreData(state, action) {
@@ -13,17 +15,26 @@ export const storeDataSlice = createSlice({
         return;
       }
 
-      const categories = Object.keys(action.payload);
-      // console.log("Categories in Redux:", categories);
-      console.log("Full Data:", action.payload);
-      // const details = action.payload;
-     state.category = categories;
-      // state.allData.push({
-      //   categories: categories, 
-      //   details: action.payload, 
-      // });
-      // state.allData = details;
-      // console.log("Full Data:", details);
+      state.allData = action.payload; // Store full data
+
+      // Extract categories
+      state.categories = action.payload.categories || [];
+
+      // Extract subcategories from all categories
+      state.subcategories = state.categories.flatMap(
+        (category) => category.subcategories || []
+      );
+
+      // Extract items from all subcategories
+      state.items = state.subcategories.flatMap(
+        (subcategory) => subcategory.fashionType?.items || []
+      );
+
+      console.log("Data Stored in Redux:", {
+        categories: state.categories,
+        subcategories: state.subcategories,
+        items: state.items,
+      });
     },
   },
 });

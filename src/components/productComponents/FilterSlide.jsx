@@ -4,29 +4,31 @@ import {
   AccordionItem,
   AccordionTrigger,
   AccordionContent,
-} from "@/components/ui/accordion";
+} from "../ui/accordion";
 
 const FilterSlide = () => {
   return (
-    <div className="w-full p-4 bg-white shadow-md rounded-lg">
-      <h2 className="font-bold text-lg mb-3">Filters</h2>
+    <div className="w-full p-6 bg-gray-50 shadow-lg rounded-lg">
+      <h2 className="font-bold text-xl mb-4 text-gray-800">Filters</h2>
 
-      <Accordion type="multiple" className="space-y-2">
+      <Accordion type="multiple" className="space-y-4">
         {/* Sort Accordion */}
         <AccordionItem value="sort">
-          <AccordionTrigger>Sort</AccordionTrigger>
-          <AccordionContent>
-            <div className="space-y-2">
-              <div className="cursor-pointer hover:bg-gray-100 p-2 rounded-md">
+          <AccordionTrigger className="text-lg font-semibold ">
+            Sort
+          </AccordionTrigger>
+          <AccordionContent className="bg-white p-3 rounded-md shadow-sm">
+            <div className="space-y-3">
+              <div className="cursor-pointer hover:bg-indigo-100 p-2 rounded-md text-gray-700">
                 Price: High to Low
               </div>
-              <div className="cursor-pointer hover:bg-gray-100 p-2 rounded-md">
+              <div className="cursor-pointer hover:bg-indigo-100 p-2 rounded-md text-gray-700">
                 Price: Low to High
               </div>
-              <div className="cursor-pointer hover:bg-gray-100 p-2 rounded-md">
+              <div className="cursor-pointer hover:bg-indigo-100 p-2 rounded-md text-gray-700">
                 Newly Arrived
               </div>
-              <div className="cursor-pointer hover:bg-gray-100 p-2 rounded-md">
+              <div className="cursor-pointer hover:bg-indigo-100 p-2 rounded-md text-gray-700">
                 Most Sold
               </div>
             </div>
@@ -35,53 +37,80 @@ const FilterSlide = () => {
 
         {/* Brand Accordion */}
         <AccordionItem value="brand">
-          <AccordionTrigger>Brand</AccordionTrigger>
-          <AccordionContent>
-            <div className="cursor-pointer hover:bg-gray-100 p-2 rounded-md">
-              Nike
-            </div>
-            <div className="cursor-pointer hover:bg-gray-100 p-2 rounded-md">
-              Adidas
-            </div>
-            <div className="cursor-pointer hover:bg-gray-100 p-2 rounded-md">
-              Puma
+          <AccordionTrigger className="text-lg font-semibold ">
+            Brand
+          </AccordionTrigger>
+          <AccordionContent className="bg-white p-3 rounded-md shadow-sm">
+            <div className="space-y-3">
+              <div className="cursor-pointer hover:bg-indigo-100 p-2 rounded-md text-gray-700">
+                Nike
+              </div>
+              <div className="cursor-pointer hover:bg-indigo-100 p-2 rounded-md text-gray-700">
+                Adidas
+              </div>
+              <div className="cursor-pointer hover:bg-indigo-100 p-2 rounded-md text-gray-700">
+                Puma
+              </div>
             </div>
           </AccordionContent>
         </AccordionItem>
 
         {/* Size Accordion */}
         <AccordionItem value="size">
-          <AccordionTrigger>Size</AccordionTrigger>
-          <AccordionContent>
-            <div className="cursor-pointer hover:bg-gray-100 p-2 rounded-md">
-              Small
-            </div>
-            <div className="cursor-pointer hover:bg-gray-100 p-2 rounded-md">
-              Medium
-            </div>
-            <div className="cursor-pointer hover:bg-gray-100 p-2 rounded-md">
-              Large
+          <AccordionTrigger className="text-lg font-semibold ">
+            Size
+          </AccordionTrigger>
+          <AccordionContent className="bg-white p-3 rounded-md shadow-sm">
+            <div className="space-y-3">
+              <div className="cursor-pointer hover:bg-indigo-100 p-2 rounded-md text-gray-700">
+                Small
+              </div>
+              <div className="cursor-pointer hover:bg-indigo-100 p-2 rounded-md text-gray-700">
+                Medium
+              </div>
+              <div className="cursor-pointer hover:bg-indigo-100 p-2 rounded-md text-gray-700">
+                Large
+              </div>
             </div>
           </AccordionContent>
         </AccordionItem>
 
-        {/* Price Accordion */}
+        {/* Price Range Accordion */}
         <AccordionItem value="price">
-          <AccordionTrigger>Price</AccordionTrigger>
-          <AccordionContent>
-            <input type="range" min="0" max="5000" className="w-full mt-2" />
+          <AccordionTrigger className="text-lg font-semibold ">
+            Price Range
+          </AccordionTrigger>
+          <AccordionContent className="bg-white p-3 rounded-md shadow-sm">
+            <div className="space-y-3">
+              <div className="cursor-pointer hover:bg-green-100 p-2 rounded-md text-gray-700">
+                1000 - 2000
+              </div>
+              <div className="cursor-pointer hover:bg-green-100 p-2 rounded-md text-gray-700">
+                2000 - 3000
+              </div>
+              <div className="cursor-pointer hover:bg-green-100 p-2 rounded-md text-gray-700">
+                3000 - 4000
+              </div>
+              <div className="cursor-pointer hover:bg-green-100 p-2 rounded-md text-gray-700">
+                4000 - 5000
+              </div>
+            </div>
           </AccordionContent>
         </AccordionItem>
 
         {/* Customer Rating Accordion */}
         <AccordionItem value="rating">
-          <AccordionTrigger>Customer Rating</AccordionTrigger>
-          <AccordionContent>
-            <div className="cursor-pointer hover:bg-gray-100 p-2 rounded-md">
-              4 & above
-            </div>
-            <div className="cursor-pointer hover:bg-gray-100 p-2 rounded-md">
-              3 & above
+          <AccordionTrigger className="text-lg font-semibold ">
+            Customer Rating
+          </AccordionTrigger>
+          <AccordionContent className="bg-white p-3 rounded-md shadow-sm">
+            <div className="space-y-3">
+              <div className="cursor-pointer hover:bg-indigo-100 p-2 rounded-md text-gray-700">
+                4 & above
+              </div>
+              <div className="cursor-pointer hover:bg-indigo-100 p-2 rounded-md text-gray-700">
+                3 & above
+              </div>
             </div>
           </AccordionContent>
         </AccordionItem>

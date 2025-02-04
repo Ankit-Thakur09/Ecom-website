@@ -3,25 +3,197 @@
     {
       "name": "fashion",
       "categoryImage": "/thumbnails/fashion.webp",
-      "path":"fashion",
+      "path": "fashion",
       "subcategories": [
         {
-          "name": "Men",
+          "name": "men",
           "subcategoryImage": "/thumbnails/menFashion.webp",
-          "clothing": [
-            {
-              "name": "Formal Shirt",
-              "price": 25.99,
-              "description": "Slim fit cotton shirt perfect for office wear.",
-              "image": "/images/items/formal-shirt.jpg"
-            },
-            {
-              "name": "Casual T-Shirt",
-              "price": 15.49,
-              "description": "Soft cotton t-shirt with a stylish design.",
-              "image": "/images/items/casual-tshirt.jpg"
-            }
-          ],
+
+          "fashionType": {
+            "fashionTypeName": "Cloths",
+            "items": [
+              {
+                "id": 1,
+                "name": "Wool Blend Overcoat",
+                "price": 7499,
+                "description": "Classic wool blend overcoat for winter warmth.",
+                "image": "/images/items/wool-overcoat.jpg",
+                "brand": "Premium Wear",
+                "season": "winter",
+                "material": "Wool Blend",
+                "rating": "4.7",
+                "type": "Formal",
+                "section": "Topwear",
+                "review": [
+                  {
+                    "user": "JohnDoe",
+                    "date": "2024-11-10",
+                    "text": "Elegant and warm!"
+                  }
+                ]
+              },
+              {
+                "id": 2,
+                "name": "Casual Hoodie",
+                "price": 3349,
+                "description": "Comfortable fleece-lined hoodie for cold days.",
+                "image": "/images/items/casual-hoodie.jpg",
+                "brand": "Urban Style",
+                "season": "winter",
+                "material": "Cotton Blend",
+                "rating": "4.6",
+                "type": "Casual",
+                "section": "Topwear",
+                "review": [
+                  {
+                    "user": "Mike22",
+                    "date": "2024-11-15",
+                    "text": "Super cozy and stylish."
+                  }
+                ]
+              },
+              {
+                "id": 3,
+                "name": "Puffer Jacket",
+                "price": 5799,
+                "description": "Insulated puffer jacket for maximum warmth.",
+                "image": "/images/items/puffer-jacket.jpg",
+                "brand": "WinterPro",
+                "season": "winter",
+                "material": "Polyester",
+                "rating": "4.8",
+                "type": "Casual",
+                "section": "Topwear",
+                "review": [
+                  {
+                    "user": "RyanT",
+                    "date": "2024-12-02",
+                    "text": "Lightweight yet warm!"
+                  }
+                ]
+              },
+              {
+                "id": 4,
+                "name": "Thermal Socks",
+                "price": 699,
+                "description": "Ultra-warm thermal socks for freezing temperatures.",
+                "image": "/images/items/thermal-socks.jpg",
+                "brand": "HeatGear",
+                "season": "winter",
+                "material": "Wool Blend",
+                "rating": "4.5",
+                "type": "Casual",
+                "section": "Accessories",
+                "review": [
+                  {
+                    "user": "SamK",
+                    "date": "2024-12-05",
+                    "text": "Keeps my feet warm and dry."
+                  }
+                ]
+              },
+              {
+                "id": 5,
+                "name": "Insulated Cargo Pants",
+                "price": 4199,
+                "description": "Durable and warm insulated cargo pants.",
+                "image": "/images/items/insulated-cargo.jpg",
+                "brand": "OutdoorFlex",
+                "season": "winter",
+                "material": "Polyester Blend",
+                "rating": "4.7",
+                "type": "Casual",
+                "section": "Bottomwear",
+                "review": [
+                  {
+                    "user": "LiamP",
+                    "date": "2024-12-07",
+                    "text": "Great fit and very warm!"
+                  }
+                ]
+              },
+              {
+                "id": 6,
+                "name": "Fleece Lined Jeans",
+                "price": 3299,
+                "description": "Warm fleece-lined jeans for extra comfort.",
+                "image": "/images/items/fleece-jeans.jpg",
+                "brand": "DenimWarm",
+                "season": "winter",
+                "material": "Denim & Fleece",
+                "rating": "4.6",
+                "type": "Casual",
+                "section": "Bottomwear",
+                "review": [
+                  {
+                    "user": "JakeM",
+                    "date": "2024-12-09",
+                    "text": "Perfect for cold weather!"
+                  }
+                ]
+              },
+              {
+                "id": 7,
+                "name": "Cashmere Beanie",
+                "price": 999,
+                "description": "Soft and warm cashmere beanie for winter.",
+                "image": "/images/items/cashmere-beanie.jpg",
+                "brand": "WinterCozy",
+                "season": "winter",
+                "material": "Cashmere",
+                "rating": "4.8",
+                "type": "Casual",
+                "section": "Accessories",
+                "review": [
+                  {
+                    "user": "NathanB",
+                    "date": "2024-12-11",
+                    "text": "Very warm and comfortable!"
+                  }
+                ]
+              },
+              {
+                "id": 8,
+                "name": "Turtleneck Sweater",
+                "price": 3999,
+                "description": "Stylish and warm wool turtleneck sweater.",
+                "image": "/images/items/turtleneck-sweater.jpg",
+                "brand": "ClassicWear",
+                "season": "winter",
+                "material": "Wool",
+                "rating": "4.7",
+                "type": "Formal",
+                "section": "Topwear",
+                "review": [
+                  {
+                    "user": "OliverH",
+                    "date": "2024-12-13",
+                    "text": "Looks amazing and keeps me warm!"
+                  }
+                ]
+              },
+              {
+                "id": 9,
+                "name": "Waterproof Gloves",
+                "price": 1299,
+                "description": "Durable and insulated waterproof gloves.",
+                "image": "/images/items/waterproof-gloves.jpg",
+                "brand": "WinterGuard",
+                "season": "winter",
+                "material": "Polyester Blend",
+                "rating": "4.6",
+                "type": "Casual",
+                "section": "Accessories",
+                "review": [
+                  {
+                    "user": "DanielK",
+                    "date": "2024-12-14",
+                    "text": "Keeps my hands warm and dry!"
+                  }
+                ]
+              }
+            ]
+          },
           "footwear": [
             {
               "name": "Running Shoes",
@@ -36,10 +208,204 @@
           "subcategoryImage": "thumbnails/womenFashion.webp",
           "clothing": [
             {
-              "name": "Evening Dress",
-              "price": 60.0,
-              "description": "Elegant evening dress with lace details.",
-              "image": "/images/items/evening-dress.jpg"
+              "id": 1,
+              "name": "Woolen Trench Coat",
+              "price": 7999,
+              "description": "Elegant women's woolen trench coat with warm inner lining and belted waist for extra warmth.",
+              "image": "/images/items/woolen-trench-coat.jpg",
+              "brand": "ChicWear",
+              "season": "winter",
+              "material": "Wool Blend",
+              "rating": "4.8",
+              "type": "Formal",
+              "section": "Outerwear",
+              "review": [
+                {
+                  "user": "EmilyD",
+                  "date": "2024-11-10",
+                  "text": "Incredibly warm and stylish! Perfect for harsh winters."
+                }
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Cashmere Turtleneck Sweater",
+              "price": 12999,
+              "description": "Luxuriously soft cashmere turtleneck sweater with ribbed details.",
+              "image": "/images/items/cashmere-sweater.jpg",
+              "brand": "LuxeStyle",
+              "season": "winter",
+              "material": "Pure Cashmere",
+              "rating": "4.9",
+              "type": "Smart Casual",
+              "section": "Knitwear",
+              "review": [
+                {
+                  "user": "SophiaM",
+                  "date": "2024-11-15",
+                  "text": "The warmest and softest sweater I own!"
+                }
+              ]
+            },
+            {
+              "id": 3,
+              "name": "Quilted Puffer Jacket",
+              "price": 8599,
+              "description": "Heavyweight quilted puffer jacket with faux fur hood trim.",
+              "image": "/images/items/puffer-jacket.jpg",
+              "brand": "WinterChic",
+              "season": "winter",
+              "material": "Down Filled Polyester",
+              "rating": "4.7",
+              "type": "Casual",
+              "section": "Outerwear",
+              "review": [
+                {
+                  "user": "JennaR",
+                  "date": "2024-11-08",
+                  "text": "Extremely warm and comfortable in snow!"
+                }
+              ]
+            },
+            {
+              "id": 4,
+              "name": "Wool Blend Maxi Coat",
+              "price": 14999,
+              "description": "Full-length wool blend coat with double-breasted closure and side pockets.",
+              "image": "/images/items/wool-maxi-coat.jpg",
+              "brand": "LuxeStyle",
+              "season": "winter",
+              "material": "Wool Blend",
+              "rating": "4.8",
+              "type": "Formal",
+              "section": "Outerwear",
+              "review": [
+                {
+                  "user": "LilaP",
+                  "date": "2024-11-11",
+                  "text": "Elegant and keeps me warm in freezing temperatures!"
+                }
+              ]
+            },
+            {
+              "id": 5,
+              "name": "Thermal Leggings",
+              "price": 2999,
+              "description": "High-waisted thermal leggings with fleece lining.",
+              "image": "/images/items/thermal-leggings.jpg",
+              "brand": "WinterChic",
+              "season": "winter",
+              "material": "Thermal Cotton Blend",
+              "rating": "4.7",
+              "type": "Casual",
+              "section": "Bottoms",
+              "review": [
+                {
+                  "user": "MiaH",
+                  "date": "2024-11-13",
+                  "text": "Perfect base layer for winter activities!"
+                }
+              ]
+            },
+            {
+              "id": 6,
+              "name": "Cable Knit Cardigan",
+              "price": 6299,
+              "description": "Chunky cable knit cardigan with wooden buttons and pockets.",
+              "image": "/images/items/cable-cardigan.jpg",
+              "brand": "ChicWear",
+              "season": "winter",
+              "material": "Merino Wool",
+              "rating": "4.8",
+              "type": "Casual",
+              "section": "Knitwear",
+              "review": [
+                {
+                  "user": "OliviaT",
+                  "date": "2024-11-14",
+                  "text": "Cozy and perfect for layering!"
+                }
+              ]
+            },
+            {
+              "id": 7,
+              "name": "Wool Blend Pants",
+              "price": 4599,
+              "description": "Tailored wool blend pants with warm lining and straight leg fit.",
+              "image": "/images/items/wool-pants.jpg",
+              "brand": "WorkChic",
+              "season": "winter",
+              "material": "Wool Blend",
+              "rating": "4.6",
+              "type": "Formal",
+              "section": "Bottoms",
+              "review": [
+                {
+                  "user": "SarahK",
+                  "date": "2024-11-16",
+                  "text": "Warm and professional looking!"
+                }
+              ]
+            },
+            {
+              "id": 8,
+              "name": "Chunky Roll Neck Sweater",
+              "price": 5999,
+              "description": "Oversized roll neck sweater in chunky knit design.",
+              "image": "/images/items/rollneck-sweater.jpg",
+              "brand": "WinterChic",
+              "season": "winter",
+              "material": "Wool Blend",
+              "rating": "4.9",
+              "type": "Casual",
+              "section": "Knitwear",
+              "review": [
+                {
+                  "user": "AmyR",
+                  "date": "2024-11-12",
+                  "text": "Like wearing a warm hug!"
+                }
+              ]
+            },
+            {
+              "id": 9,
+              "name": "Faux Fur Lined Parka",
+              "price": 9999,
+              "description": "Long parka with faux fur lining and multiple pockets.",
+              "image": "/images/items/fur-parka.jpg",
+              "brand": "WinterChic",
+              "season": "winter",
+              "material": "Cotton Blend with Faux Fur",
+              "rating": "4.6",
+              "type": "Casual",
+              "section": "Outerwear",
+              "review": [
+                {
+                  "user": "RachelW",
+                  "date": "2024-11-16",
+                  "text": "Extremely warm and practical for winter!"
+                }
+              ]
+            },
+            {
+              "id": 10,
+              "name": "Merino Wool Sweater Dress",
+              "price": 7999,
+              "description": "Mid-length sweater dress in fine merino wool with belt.",
+              "image": "/images/items/sweater-dress.jpg",
+              "brand": "LuxeStyle",
+              "season": "winter",
+              "material": "Merino Wool",
+              "rating": "4.8",
+              "type": "Smart Casual",
+              "section": "Dresses",
+              "review": [
+                {
+                  "user": "DianaL",
+                  "date": "2024-11-15",
+                  "text": "Warm and elegant for winter events!"
+                }
+              ]
             }
           ]
         },
@@ -48,10 +414,424 @@
           "subcategoryImage": "thumbnails/kidsFashion.webp",
           "clothing": [
             {
-              "name": "Cartoon Print T-Shirt",
-              "price": 12.99,
-              "description": "Colorful t-shirt with cartoon characters.",
-              "image": "/images/items/kids-tshirt.jpg"
+              "id": 1,
+              "name": "Kids Hooded Puffer Jacket",
+              "price": 3999,
+              "description": "Warm puffer jacket with fun animal-themed hood and easy-zip closure.",
+              "image": "/images/items/kids-puffer-jacket.jpg",
+              "brand": "KidsCozy",
+              "season": "winter",
+              "material": "Down Filled Polyester",
+              "ageRange": "4-12 years",
+              "rating": "4.8",
+              "type": "Casual",
+              "section": "Outerwear",
+              "review": [
+                {
+                  "user": "ParentAmy",
+                  "date": "2024-11-10",
+                  "text": "My daughter loves the cute hood and it keeps her super warm!"
+                }
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Fleece-Lined Snow Pants",
+              "price": 2599,
+              "description": "Waterproof snow pants with fleece lining and reinforced knees.",
+              "image": "/images/items/kids-snow-pants.jpg",
+              "brand": "WinterKids",
+              "season": "winter",
+              "material": "Waterproof Polyester with Fleece",
+              "ageRange": "3-14 years",
+              "rating": "4.9",
+              "type": "Casual",
+              "section": "Bottoms",
+              "review": [
+                {
+                  "user": "SnowMom",
+                  "date": "2024-11-15",
+                  "text": "Perfect for snow days! Keeps dry during sledding."
+                }
+              ]
+            },
+            {
+              "id": 3,
+              "name": "Cartoon Print Thermal Set",
+              "price": 1999,
+              "description": "Two-piece thermal underwear set with fun cartoon prints.",
+              "image": "/images/items/kids-thermal-set.jpg",
+              "brand": "CozyKids",
+              "season": "winter",
+              "material": "Cotton Thermal Blend",
+              "ageRange": "2-12 years",
+              "rating": "4.7",
+              "type": "Innerwear",
+              "section": "Thermals",
+              "review": [
+                {
+                  "user": "WarmMom",
+                  "date": "2024-11-08",
+                  "text": "Great base layer and kids love the prints!"
+                }
+              ]
+            },
+            {
+              "id": 4,
+              "name": "Dinosaur Sweater",
+              "price": 2499,
+              "description": "Cozy knit sweater with fun 3D dinosaur design and soft interior.",
+              "image": "/images/items/kids-dino-sweater.jpg",
+              "brand": "KidsFun",
+              "season": "winter",
+              "material": "Cotton Wool Blend",
+              "ageRange": "3-10 years",
+              "rating": "4.8",
+              "type": "Casual",
+              "section": "Knitwear",
+              "review": [
+                {
+                  "user": "DinoLover",
+                  "date": "2024-11-11",
+                  "text": "My son refuses to wear anything else now!"
+                }
+              ]
+            },
+            {
+              "id": 5,
+              "name": "Warm Winter Boots",
+              "price": 2999,
+              "description": "Easy-fastening winter boots with non-slip sole and warm lining.",
+              "image": "/images/items/kids-winter-boots.jpg",
+              "brand": "WinterKids",
+              "season": "winter",
+              "material": "Waterproof Leather with Thinsulate",
+              "ageRange": "4-12 years",
+              "rating": "4.7",
+              "type": "Casual",
+              "section": "Footwear",
+              "review": [
+                {
+                  "user": "ActiveMom",
+                  "date": "2024-11-13",
+                  "text": "Warm and easy for kids to put on themselves!"
+                }
+              ]
+            },
+            {
+              "id": 6,
+              "name": "Unicorn Fleece Hoodie",
+              "price": 1899,
+              "description": "Soft fleece hoodie with unicorn design and sparkle details.",
+              "image": "/images/items/kids-fleece-hoodie.jpg",
+              "brand": "KidsCozy",
+              "season": "winter",
+              "material": "Polar Fleece",
+              "ageRange": "3-12 years",
+              "rating": "4.8",
+              "type": "Casual",
+              "section": "Knitwear",
+              "review": [
+                {
+                  "user": "UnicornFan",
+                  "date": "2024-11-14",
+                  "text": "So soft and cute! Perfect for layering."
+                }
+              ]
+            },
+            {
+              "id": 7,
+              "name": "Winter Accessories Set",
+              "price": 1499,
+              "description": "Matching hat, scarf, and mittens set with pom-pom details.",
+              "image": "/images/items/kids-winter-set.jpg",
+              "brand": "CozyKids",
+              "season": "winter",
+              "material": "Acrylic Wool Blend",
+              "ageRange": "3-14 years",
+              "rating": "4.6",
+              "type": "Accessories",
+              "section": "Winter Accessories",
+              "review": [
+                {
+                  "user": "WinterMom",
+                  "date": "2024-11-16",
+                  "text": "Adorable set and very warm!"
+                }
+              ]
+            },
+            {
+              "id": 8,
+              "name": "Quilted Snow Suit",
+              "price": 4599,
+              "description": "One-piece snowsuit with grow-cuffs and reflective details.",
+              "image": "/images/items/kids-snowsuit.jpg",
+              "brand": "WinterKids",
+              "season": "winter",
+              "material": "Waterproof Quilted Polyester",
+              "ageRange": "2-8 years",
+              "rating": "4.9",
+              "type": "Casual",
+              "section": "Outerwear",
+              "review": [
+                {
+                  "user": "SnowDad",
+                  "date": "2024-11-12",
+                  "text": "Perfect for winter play! Easy to put on and take off."
+                }
+              ]
+            },
+            {
+              "id": 9,
+              "name": "Cozy Pajama Set",
+              "price": 1799,
+              "description": "Warm fleece pajama set with festive winter print.",
+              "image": "/images/items/kids-pajama.jpg",
+              "brand": "CozyKids",
+              "season": "winter",
+              "material": "Micro Fleece",
+              "ageRange": "2-14 years",
+              "rating": "4.8",
+              "type": "Sleepwear",
+              "section": "Nightwear",
+              "review": [
+                {
+                  "user": "SleepyMom",
+                  "date": "2024-11-16",
+                  "text": "Super soft and warm for cold nights!"
+                }
+              ]
+            },
+            {
+              "id": 10,
+              "name": "Winter School Uniform Set",
+              "price": 3499,
+              "description": "Warm school uniform set with sweater, trousers/skirt, and thermal tights.",
+              "image": "/images/items/kids-uniform-set.jpg",
+              "brand": "SchoolStyle",
+              "season": "winter",
+              "material": "Wool Blend",
+              "ageRange": "4-16 years",
+              "rating": "4.7",
+              "type": "Formal",
+              "section": "School Wear",
+              "review": [
+                {
+                  "user": "SchoolMom",
+                  "date": "2024-11-15",
+                  "text": "Great quality and keeps kids warm during school hours!"
+                }
+              ]
+            },
+            {
+              "id": 11,
+              "name": "UV Protection Swim Set",
+              "price": 1999,
+              "description": "Two-piece swimsuit with UPF 50+ protection and fun sea creature prints.",
+              "image": "/images/items/kids-swim-set.jpg",
+              "brand": "SunSafe",
+              "season": "summer",
+              "material": "UV Protected Polyester Blend",
+              "ageRange": "2-12 years",
+              "rating": "4.8",
+              "type": "Swimwear",
+              "section": "Beachwear",
+              "review": [
+                {
+                  "user": "BeachMom",
+                  "date": "2024-11-10",
+                  "text": "Great sun protection and dries quickly!"
+                }
+              ]
+            },
+            {
+              "id": 12,
+              "name": "Cotton Shorts Set",
+              "price": 1299,
+              "description": "Breathable cotton shorts with matching t-shirt in bright summer colors.",
+              "image": "/images/items/kids-shorts-set.jpg",
+              "brand": "KidsCool",
+              "season": "summer",
+              "material": "100% Cotton",
+              "ageRange": "3-14 years",
+              "rating": "4.7",
+              "type": "Casual",
+              "section": "Daily Wear",
+              "review": [
+                {
+                  "user": "ComfortFirst",
+                  "date": "2024-11-15",
+                  "text": "Perfect for hot days, very comfortable!"
+                }
+              ]
+            },
+            {
+              "id": 13,
+              "name": "Sun Protection Hat",
+              "price": 799,
+              "description": "Wide-brim sun hat with neck coverage and adjustable chin strap.",
+              "image": "/images/items/kids-sun-hat.jpg",
+              "brand": "SunSafe",
+              "season": "summer",
+              "material": "UPF 50+ Cotton Blend",
+              "ageRange": "2-12 years",
+              "rating": "4.9",
+              "type": "Accessories",
+              "section": "Sun Protection",
+              "review": [
+                {
+                  "user": "SafetyFirst",
+                  "date": "2024-11-08",
+                  "text": "Stays on well and great coverage!"
+                }
+              ]
+            },
+            {
+              "id": 14,
+              "name": "Dinosaur Print Sandals",
+              "price": 999,
+              "description": "Comfortable sandals with dinosaur prints and secure straps.",
+              "image": "/images/items/kids-sandals.jpg",
+              "brand": "KidsFun",
+              "season": "summer",
+              "material": "EVA with Anti-slip Sole",
+              "ageRange": "2-10 years",
+              "rating": "4.6",
+              "type": "Casual",
+              "section": "Footwear",
+              "review": [
+                {
+                  "user": "ActiveMom",
+                  "date": "2024-11-11",
+                  "text": "Easy to clean and comfortable for active kids!"
+                }
+              ]
+            },
+            {
+              "id": 15,
+              "name": "Light Summer Dress",
+              "price": 1499,
+              "description": "Sleeveless cotton dress with butterfly prints and built-in shorts.",
+              "image": "/images/items/kids-summer-dress.jpg",
+              "brand": "KidsCool",
+              "season": "summer",
+              "material": "100% Cotton",
+              "ageRange": "3-12 years",
+              "rating": "4.8",
+              "type": "Casual",
+              "section": "Dresses",
+              "review": [
+                {
+                  "user": "DressLover",
+                  "date": "2024-11-13",
+                  "text": "Perfect for summer parties and play!"
+                }
+              ]
+            },
+            {
+              "id": 16,
+              "name": "Quick-Dry Sports Set",
+              "price": 1599,
+              "description": "Moisture-wicking shorts and t-shirt set for active kids.",
+              "image": "/images/items/kids-sports-set.jpg",
+              "brand": "ActiveKids",
+              "season": "summer",
+              "material": "Quick-Dry Polyester",
+              "ageRange": "4-14 years",
+              "rating": "4.7",
+              "type": "Sportswear",
+              "section": "Active Wear",
+              "review": [
+                {
+                  "user": "SportsDad",
+                  "date": "2024-11-14",
+                  "text": "Great for sports and summer activities!"
+                }
+              ]
+            },
+            {
+              "id": 17,
+              "name": "Beach Cover-Up",
+              "price": 899,
+              "description": "Light hooded cover-up with fun beach prints.",
+              "image": "/images/items/kids-cover-up.jpg",
+              "brand": "SunSafe",
+              "season": "summer",
+              "material": "Light Cotton Blend",
+              "ageRange": "2-12 years",
+              "rating": "4.6",
+              "type": "Beachwear",
+              "section": "Swimwear",
+              "review": [
+                {
+                  "user": "PoolMom",
+                  "date": "2024-11-16",
+                  "text": "Perfect for pool days!"
+                }
+              ]
+            },
+            {
+              "id": 18,
+              "name": "Cargo Shorts",
+              "price": 1299,
+              "description": "Lightweight cargo shorts with adjustable waist and multiple pockets.",
+              "image": "/images/items/kids-cargo-shorts.jpg",
+              "brand": "KidsCool",
+              "season": "summer",
+              "material": "Cotton Blend",
+              "ageRange": "4-14 years",
+              "rating": "4.8",
+              "type": "Casual",
+              "section": "Bottoms",
+              "review": [
+                {
+                  "user": "PracticalMom",
+                  "date": "2024-11-12",
+                  "text": "Durable and perfect for summer adventures!"
+                }
+              ]
+            },
+            {
+              "id": 19,
+              "name": "Summer Pajama Set",
+              "price": 999,
+              "description": "Cool cotton pajama set with short sleeves and shorts.",
+              "image": "/images/items/kids-summer-pjs.jpg",
+              "brand": "CozyKids",
+              "season": "summer",
+              "material": "100% Cotton",
+              "ageRange": "2-14 years",
+              "rating": "4.7",
+              "type": "Sleepwear",
+              "section": "Nightwear",
+              "review": [
+                {
+                  "user": "NightMom",
+                  "date": "2024-11-16",
+                  "text": "Light and comfortable for summer nights!"
+                }
+              ]
+            },
+            {
+              "id": 20,
+              "name": "Summer School Uniform Set",
+              "price": 1799,
+              "description": "Light cotton uniform set with short sleeves and shorts/skirt.",
+              "image": "/images/items/kids-summer-uniform.jpg",
+              "brand": "SchoolStyle",
+              "season": "summer",
+              "material": "Cotton Blend",
+              "ageRange": "4-16 years",
+              "rating": "4.7",
+              "type": "Formal",
+              "section": "School Wear",
+              "review": [
+                {
+                  "user": "SchoolMom",
+                  "date": "2024-11-15",
+                  "text": "Perfect weight for summer school days!"
+                }
+              ]
             }
           ]
         }
